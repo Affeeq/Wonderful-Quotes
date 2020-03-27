@@ -22,7 +22,7 @@
     	props: ['quotes'],
     	methods: {
     		addQuote() {
-                if(this.localQuotes.length == 10) {
+                if(this.localQuotes.length >= 10) {
                     alert('You have reached the maxiumum number of quotes. Delete and try again.');
                 } else {
                     this.localQuotes.push(this.newQuote);

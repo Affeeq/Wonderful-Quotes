@@ -4,7 +4,7 @@
 		<app-add-quote :quotes="quotes" @quoteWasAdded="quotes = $event"></app-add-quote>
 		<app-quote>
 			<div class="col-xs-3 marginBottom" v-for="(quote, index) in quotes" slot="text">
-				<p class="quoteCard" @click="deleteQuote(index)">{{ quote }}</p>
+				<p class="quoteCard" @click="deleteQuote()">{{ quote }}</p>
 			</div>
 		</app-quote>
 		<app-footer></app-footer>
